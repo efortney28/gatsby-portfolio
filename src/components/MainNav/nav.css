@@ -1,0 +1,38 @@
+@import '../layout/layout.css';
+
+nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--deep-blue);
+    font-family: "Varela Round", sans-serif;
+    min-height: 2.8rem;
+    z-index: 0;
+}
+.home-link {
+    background-image: none;
+    text-shadow: none;
+}
+
+.orange-text {
+    color: var(--orange-color);
+}
+
+.light-text {
+    color: var(--light-text);
+}
+
+.brand {
+    margin: 0.25rem 1rem;
+    font-size: 1.3rem;
+
+}
+
+.menu-button{
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+}

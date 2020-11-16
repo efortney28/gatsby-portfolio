@@ -1,0 +1,46 @@
+import React from 'react'
+import { Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faInstagram, faGithub, faTwitter, faFlickr } from '@fortawesome/free-brands-svg-icons'
+
+import './home.css'
+import { unstable_renderSubtreeIntoContainer } from 'react-dom'
+
+const SocialIcons = () => {
+    const icons = [
+        {
+            name: 'facebook',
+            img: faFacebookSquare,
+            link: 'https://www.facebook.com/efortneydev',
+        },
+        {
+            name: 'instagram',
+            img: faInstagram,
+            link: 'https://www.instagram.com/efortneyphoto/',
+        },
+        {
+            name: 'github',
+            img: faGithub,
+            link: 'https://github.com/efortney28',
+        },
+        {
+            name: 'twitter',
+            img: faTwitter,
+            link: 'https://twitter.com/EFortney',
+        },
+        {
+            name: 'flickr',
+            img: faFlickr,
+            link: 'https://www.flickr.com/photos/efortney28/',
+        }
+    ]
+    return (
+        <div className="social-icons-container">
+            {icons.map((icon) => (
+                <a className="social-icon-link" href={icon.link}><FontAwesomeIcon icon={icon.img} /></a>
+            ))}
+        </div>
+    )
+}
+
+export default SocialIcons

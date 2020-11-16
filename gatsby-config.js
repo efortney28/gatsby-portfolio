@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Eric Fortney Web Development and Photography`,
+    description: `Eric Fortney is a freelance web developer and photographer servicing the greater Houston, TX area!`,
+    author: `Eric Fortney`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,9 +24,24 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `e7boqj0q3hkc`,
+        accessToken: `D0fN1ue-4eLyCRfK23vFXvV6gQMFYXpHecwvXmVSijg`,
+      },
+    },
+    `@contentful/gatsby-transformer-contentful-richtext`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/typography`,
+      },
+    },
+    'gatsby-plugin-fontawesome-css',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

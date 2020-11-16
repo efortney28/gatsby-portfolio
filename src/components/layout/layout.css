@@ -1,0 +1,13 @@
+:root {
+  --bg-color: #222831;
+  --light-text: #EEEEEE;
+  --orange-color: #FF5722;
+  --deep-blue: #2D4059;
+  --bright-green: #2DC583;
+
+  background-color: var(--bg-color);
+}
+
+.text-light {
+  color: var(--light-text);
+}

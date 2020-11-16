@@ -1,0 +1,33 @@
+.photo-container {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+
+}
+.page-title {
+    color: var(--light-text);
+    margin: 2rem 1rem;
+    text-align: center;
+}
+.page-description {
+    color: var(--light-text);
+    margin: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.photo-post {
+    background-color: var(--deep-blue);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.photo-title {
+    color: var(--light-text);
+    margin: 1rem 2rem;
+    padding-top: 0.25rem;
+    text-align: center;
+}
+.photo-img {
+    margin: 0;
+}

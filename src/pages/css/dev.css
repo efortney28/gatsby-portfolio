@@ -1,0 +1,38 @@
+.dev-container {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+
+}
+.page-title {
+    color: var(--light-text);
+    margin: 2rem 1rem;
+    text-align: center;
+}
+.page-description {
+    color: var(--light-text);
+    margin: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.dev-post {
+    color: var(--light-text);
+    background-color: var(--deep-blue);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.dev-title {
+    margin: 1rem 2rem;
+    padding-top: 0.25rem;
+    text-align: center;
+}
+.dev-img {
+    margin: 0;
+}
+.dev-description {
+    text-align: center;
+    margin: 0 0.75rem;
+    padding: 1rem 0.25rem 1.5rem 0.25rem;
+    font-size: 0.87rem;
+}
