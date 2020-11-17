@@ -18,6 +18,7 @@
 .dev-post {
     color: var(--light-text);
     background-color: var(--deep-blue);
+    padding-top: 0.2rem;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -35,4 +36,7 @@
     margin: 0 0.75rem;
     padding: 1rem 0.25rem 1.5rem 0.25rem;
     font-size: 0.87rem;
+}
+.link {
+    text-decoration: none;
 }

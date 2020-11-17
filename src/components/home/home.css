@@ -22,7 +22,7 @@
   padding: 0;
 }
 .form-input {
-  margin: 0.5rem 3rem;
+  margin: 0.5rem 2rem;
   background: none;
   border: none;
   border-bottom: 1px solid var(--bright-green);
@@ -40,13 +40,14 @@ textarea {
   justify-content: center;
   background-color: var(--deep-blue);
   margin: 0;
+  padding: 0 1rem;
 }
 .social-icon-link {
   text-decoration: none;
   color: var(--light-text);
   text-shadow: none;
   background-image: none;
-  margin: 1rem 1.5rem;
+  margin: 1rem;
   font-size: 2rem;
 }
 
@@ -61,4 +62,17 @@ textarea {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: var(--light-text);
+}
+@media screen and (min-width: 1000px) {
+  .social-icon-link {
+    margin: 1rem 2rem;
+    font-size: 2rem;
+  }
+  .contact-form-container {
+    margin: 4rem;
+  }
+  textarea {
+    height: 12rem;
+  }
+
 }

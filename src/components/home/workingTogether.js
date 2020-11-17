@@ -5,9 +5,9 @@ import './home.css'
 const WorkingTogether = () => {
 
     return (
-        <div className="working-together-container">
-            <h4 className="light-text working-text">Want work together? Contact me!</h4>
-        </div>
+        <section className="working-together-container">
+            <h3 className="light-text working-text">Want work together? Contact me!</h3>
+        </section>
     )
 }
 export default WorkingTogether

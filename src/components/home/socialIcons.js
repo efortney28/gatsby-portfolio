@@ -35,11 +35,11 @@ const SocialIcons = () => {
         }
     ]
     return (
-        <div className="social-icons-container">
+        <section className="social-icons-container">
             {icons.map((icon) => (
-                <a className="social-icon-link" href={icon.link}><FontAwesomeIcon icon={icon.img} /></a>
+                <a target="_blank" className="social-icon-link" href={icon.link}><FontAwesomeIcon icon={icon.img} /></a>
             ))}
-        </div>
+        </section>
     )
 }
 
