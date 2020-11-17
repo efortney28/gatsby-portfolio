@@ -1,7 +1,9 @@
 .photo-container {
     display: flex;
+    flex-direction: column;
     margin-top: 1rem;
     justify-content: center;
+    margin: 1rem;
 
 }
 .page-title {
@@ -36,7 +38,7 @@
     background-image: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     .photo-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
