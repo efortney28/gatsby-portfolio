@@ -51,3 +51,10 @@
     margin: 0.5rem 2rem;
     padding-top: 1rem;
 }
+
+@media screen and (min-width: 700) {
+    .body-container {
+        margin-right: 8rem;
+        margin-left: 8rem;
+    }
+}

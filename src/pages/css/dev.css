@@ -1,6 +1,7 @@
 .dev-container {
     display: flex;
-    margin-top: 1rem;
+    margin: 1rem 3rem 0 3rem;
+    padding-bottom: 0;
     justify-content: center;
 
 }
@@ -39,4 +40,11 @@
 }
 .link {
     text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .dev-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

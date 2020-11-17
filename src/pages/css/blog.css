@@ -41,3 +41,10 @@
     padding: 1rem 0.25rem 1.5rem 0.25rem;
     font-size: 0.87rem;
 }
+
+@media screen and (min-width: 1000px) {
+    .blog-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

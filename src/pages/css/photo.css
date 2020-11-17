@@ -31,3 +31,17 @@
 .photo-img {
     margin: 0;
 }
+.link {
+    text-shadow: none;
+    background-image: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .photo-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .photo-title {
+        padding-top: 1rem;
+    }
+}
