@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -7,30 +7,70 @@ import SocialIcons from '../components/home/socialIcons'
 import WorkingTogether from '../components/home/workingTogether'
 import ContactForm from '../components/home/contactForm'
 
-import './css/index.css'
+import "../styles/index.css"
+import '../../static/images/beach_img.jpg'
+import '../../static/images/rocket_img.jpg'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <img
-      className="hero-image"
-      src="//images.ctfassets.net/e7boqj0q3hkc/6Kc0NVx61rHYaT0AseWg45/fc808b6a6a61b0c93cb1f7cc426b8885/25082612552_308e684b75_o.jpg"
-    ></img>
+const IndexPage = () => {
+  const [isPhoto, setIsPhoto] = useState(true)
 
-    <section className="intro-text-container">
-      <h2 className="text-light">Hey there!</h2>
-      <p className="text-light">I'm Eric Fortney. I take pictures and build websites!</p>
-      <p className="text-light">Click below to find out more about me! :)</p>
-    </section>
-
-    <section className="buttons-container">
-      <Link to="/dev" className="btn green-btn">Development</Link>
-      <Link to="/photo" className="btn orange-btn">Photography</Link>
-    </section>
-    <SocialIcons />
-    <WorkingTogether />
-    <ContactForm />
-  </Layout>
-)
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <article class="main">
+        <section className="main-image">
+          <img
+            className="hero-image"
+            alt="home image"
+            src={isPhoto ?
+              "//images.ctfassets.net/e7boqj0q3hkc/6yB7tkGVlXDixd8petmuq1/95e78061d6713f167ae7568d3d9753ab/beach_img.jpg"
+              : "//images.ctfassets.net/e7boqj0q3hkc/5tR7dHo5KBQQp1bCASYkaZ/ffc0797dbf5f3518ffe5ca895a34a7cc/rocket_img.jpg"}
+          />
+        </section>
+        <section className="main-content">
+          <article onMouseEnter={() => setIsPhoto(true)} className="main-titles" id="photography">
+            <h2 className="home-title">PHOTOGRAPHY</h2>
+            <p className="home-info">Let's capture all your important moments.</p>
+            <Link to="/photo" id="photo-cta" className="home-cta">MORE</Link>
+          </article>
+          <article onMouseEnter={() => setIsPhoto(false)} className="main-titles" id="development">
+            <h2 className="home-title">DEVELOPEMENT</h2>
+            <p className="home-info">Let's build something beautiful.</p>
+            <Link to="/dev" id="dev-cta" className="home-cta">MORE</Link>
+          </article>
+        </section>
+      </article>
+      <article id="why-me">
+        <section className="why-me-item">
+          <h3 className="why-me-title">Knowledgeable</h3>
+          <img
+            className="why-me-img"
+            src="//images.ctfassets.net/e7boqj0q3hkc/7mrJq6XACuusJRyW4gISXj/fc1ed55e2c599027f76b7965c0f864b5/undraw_education_f8ru.png"
+            alt="knowledgeable"
+          />
+          <p className="why-me-desc">Anything you need, I can do.</p>
+        </section>
+        <section className="why-me-item">
+          <h3 className="why-me-title">Quick</h3>
+          <img
+            className="why-me-img"
+            src="//images.ctfassets.net/e7boqj0q3hkc/4JH8bFvzm6MuKeuNIKPeQx/e26fbdf4d192fd54d2bd2eca17a75bfc/undraw_package_arrived_63rf.png"
+            alt="quick"
+          />
+          <p className="why-me-desc">I can return a finished project in most deadlines</p>
+        </section>
+        <section className="why-me-item">
+          <h3 className="why-me-title">Flexible</h3>
+          <img
+            className="why-me-img"
+            src="//images.ctfassets.net/e7boqj0q3hkc/Xil61cBSvdVoXZeOYKblP/8c2caa3b85ce3233977bc09e9b80ed4e/undraw_Online_collaboration_re_bkpm.png"
+            alt="flexible"
+          />
+          <p className="why-me-desc">I can work with you to meet and exceed your goals and expectations.</p>
+        </section>
+      </article>
+    </Layout>
+  )
+}
 
 export default IndexPage

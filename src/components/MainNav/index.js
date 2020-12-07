@@ -34,15 +34,16 @@ const MainNav = () => {
     return (
         <nav>
             <div className="brand">
-                <Link className="home-link" to="/">
-                    <span className="orange-text">Eric</span>
-                    <span className="light-text">Fortney</span>
+                <Link className="brand-link" to="/">
+                    <span className="medium-text title">ERIC FORTNEY </span> 
                 </Link>
+                <span className="light-text subtitle">|   PHOTOGRAPHER / WEB DEVELOPER</span>
+                
             </div>
             <HamburgerEmphatic
                 className="menu-button"
-                buttonColor="#2D4059"
-                barColor="#EEEEEE"
+                buttonColor="#4E5266"
+                barColor="#FFF"
                 buttonWidth={25}
                 {...{ isActive, toggleButton }}
             />

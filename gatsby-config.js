@@ -35,12 +35,6 @@ module.exports = {
       },
     },
     `@contentful/gatsby-transformer-contentful-richtext`,
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/typography`,
-      },
-    },
     'gatsby-plugin-fontawesome-css',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

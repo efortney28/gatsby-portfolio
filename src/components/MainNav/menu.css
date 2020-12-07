@@ -2,19 +2,24 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--deep-blue);
     z-index: 1;
+    background-color: var(--main-bg) !important;
     box-shadow: 0.25rem 0.25rem 1rem black;
 }
 .menu {
     display: block;
-    font-size: 1rem;
-    color: var(--light-text);
+    background-color: var(--main-bg) !important;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #FFF;
+    text-decoration: none;
+    border: none;
     text-shadow: none;
+    margin: 3rem;
     background-image: none;
     padding: 0.25rem 5rem 0.25rem 1rem;
 }
 
 .menu:hover {
-    color: var(--orange-color);
+    color: var(--middle-blue);
 }

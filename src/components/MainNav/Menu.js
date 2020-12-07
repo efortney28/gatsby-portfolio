@@ -9,7 +9,7 @@ const Menu = (props) => {
     return(
         <div className="menu-container">
             {links.map((link, ind) => (
-                <Link activeStyle={{color: "#FF5722"}} className="menu" to={link.path} key={ind}>{link.name}</Link>
+                <Link activeStyle={{color: "#68C5DB"}} className="menu" to={link.path} key={ind}>{link.name}</Link>
             ))}
         </div>
     )

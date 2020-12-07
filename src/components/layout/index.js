@@ -11,9 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import MainNav from '../MainNav'
 
-import "./layout.css"
-import { TypographyStyle, GoogleFont } from 'react-typography'
-import typography from '../../typography'
+import "../../styles/layout.css"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,12 +27,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <TypographyStyle typography={typography} />
-      <GoogleFont typography={typography} />
-      <div id="outer-container">
-        <MainNav pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-        <main id="page-wrap">{children}</main>
-      </div>
+      <MainNav />
+      <main id="page-wrap">{children}</main>
     </>
   )
 }

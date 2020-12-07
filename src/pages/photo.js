@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import './css/photo.css'
-
 const Photo = ({data}) => {
   const posts = data.allContentfulPhotoPost.edges
 

@@ -1,0 +1,8 @@
+@import "./global.css";
+
+.medium-text {
+    font-weight: 500;
+}
+.light-text {
+    font-weight: 300;
+}

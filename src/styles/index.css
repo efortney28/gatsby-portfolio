@@ -1,0 +1,121 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+}
+.main-image {
+    order: 1;
+}
+.hero-image {
+    padding-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: -0.3rem;
+    width: 328px;
+
+}
+.main-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+    padding: 2rem;
+    height: 200px;
+}
+#photography {
+    background-color: var(--middle-blue) !important;
+}
+#development {
+    background-color: var(--red) !important;
+}
+.home-title {
+    font-weight: 400;
+}
+.home-info {
+    padding-bottom: 1rem;
+}
+#photo-cta {
+    background-color: #8CD3E3;
+}
+#photo-cta:hover {
+    background-color: #9CD9E7;
+}
+#dev-cta {
+    background-color: #E46273;
+}
+#dev-cta:hover {
+    background-color: #E77383;
+}
+.home-cta {
+    text-decoration: none;
+    color: #FFF;
+    padding: 1.25rem 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-size: 0.8rem;
+    border-radius: 50px;
+}
+#why-me {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.why-me-item {
+    margin: 1rem;
+}
+.why-me-title {
+    font-weight: 400;
+}
+.why-me-img {
+    width: 250px;
+    max-height: 250px;
+}
+.why-me-desc {
+    font-weight: 300;
+}
+@media screen and (min-width: 1000px) {
+    .main {
+        margin-top: 2rem;
+        flex-direction: row;
+    }
+    .main-content {
+        order: 1;
+    }
+    .main-image {
+        order: 2
+    }
+    .main-titles {
+        margin: 0;
+    }
+    .hero-image {
+        padding: 0;
+        margin-left: 0;
+        height: 528px;
+        width: auto;
+    }
+    #why-me {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10.6rem;
+        margin-right: 10.6rem;
+    }
+}

@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import './css/blog.css'
-
 const Blog = ({data}) => {
     const posts = data.allContentfulBlogPost.edges
 
