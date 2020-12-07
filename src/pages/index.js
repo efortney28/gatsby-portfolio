@@ -17,7 +17,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <article class="main">
+      <div className="container">
+        <article class="main">
         <section className="main-image">
           <img
             className="hero-image"
@@ -40,7 +41,7 @@ const IndexPage = () => {
           </article>
         </section>
       </article>
-      <article id="why-me">
+        <article id="why-me">
         <section className="why-me-item">
           <h3 className="why-me-title">Knowledgeable</h3>
           <img
@@ -69,6 +70,7 @@ const IndexPage = () => {
           <p className="why-me-desc">I can work with you to meet and exceed your goals and expectations.</p>
         </section>
       </article>
+      </div>
     </Layout>
   )
 }

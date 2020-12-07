@@ -3,6 +3,9 @@ main {
     flex-direction: column;
     justify-content: center;
 }
+.container {
+    width: 100vw;
+}
 .main {
     display: flex;
     flex-direction: column;
@@ -16,12 +19,14 @@ main {
 }
 .main-image {
     order: 1;
+    margin-left: 0;
+    margin-right: 2rem;
 }
 .hero-image {
     padding-top: 2rem;
     margin-left: 1rem;
     margin-bottom: -0.3rem;
-    width: 328px;
+    max-width: 100%;
 
 }
 .main-titles {
