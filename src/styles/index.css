@@ -77,6 +77,7 @@
 }
 .why-me-title {
     font-weight: 400;
+    text-transform: uppercase;
 }
 .why-me-img {
     max-width: 200px;
