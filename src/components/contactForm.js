@@ -1,7 +1,3 @@
-import React from 'react'
-
-import './home.css'
-
 const ContactForm = () => {
 
     return (

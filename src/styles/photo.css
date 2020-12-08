@@ -1,5 +1,53 @@
-
-
-@media screen and (min-width: 1200px) {
-
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page-title {
+    margin-top: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.page-description {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.photo-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.photo-post {
+    margin-bottom: 3rem;
+    background-color: var(--middle-blue);
+}
+.photo-img {
+    width: 100%;
+}
+.photo-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-bg);
+}
+@media screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .photo-info {
+        margin-right: 2rem;
+    }
+    .photo-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .photo-post {
+        justify-self: center;
+        margin-right: 2rem;
+    }
 }

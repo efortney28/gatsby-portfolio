@@ -3,9 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SocialIcons from '../components/home/socialIcons'
-import WorkingTogether from '../components/home/workingTogether'
-import ContactForm from '../components/home/contactForm'
 
 import "../styles/index.css"
 import '../../static/images/beach_img.jpg'

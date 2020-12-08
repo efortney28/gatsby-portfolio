@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagram, faGithub, faTwitter, faFlickr } from '@fortawesome/free-brands-svg-icons'
 
-import './home.css'
-import { unstable_renderSubtreeIntoContainer } from 'react-dom'
+import '../styles/socialIcons.css'
 
 const SocialIcons = () => {
     const icons = [
