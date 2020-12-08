@@ -14,7 +14,7 @@
 .hero-image {
     padding-top: 2rem;
     margin-bottom: -0.25rem;
-    width: 1200px;
+    max-width: 1200px;
 
 }
 .main-content {
