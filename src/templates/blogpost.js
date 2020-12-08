@@ -11,7 +11,7 @@ const BlogPost = ({data}) => {
 
     return (
         <Layout>
-            <SEO title={post.slug} />
+            <SEO title={post.title} />
             <div className="container">
                 <h2 className="post-title">{post.title}</h2>
                 <img className="post-image" src={post.image.file.url} />
