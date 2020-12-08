@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     color: #FFFFFF;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .post-image {
     width: 100%;
@@ -19,6 +19,7 @@
     text-transform: uppercase;
     margin-top: 0.8rem;
     font-size: 0.85rem;
+    color: var(--middle-blue);
 }
 .body-container {
     margin-top: 1.5rem;
