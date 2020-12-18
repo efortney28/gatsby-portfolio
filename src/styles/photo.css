@@ -36,11 +36,11 @@
 }
 @media screen and (min-width: 1000px) {
     .container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+        display: flex;
+        flex-direction: row !important;
     }
     .photo-info {
-        margin-right: 2rem;
+        margin-right: 6rem;
     }
     .photo-container {
         display: grid;

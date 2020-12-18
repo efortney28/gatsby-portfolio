@@ -22,6 +22,7 @@
     flex-direction: column;
     justify-content: center;
     order: 2;
+    width: 100%;
 }
 .main-titles {
     display: flex;
@@ -87,6 +88,10 @@
     font-weight: 300;
 }
 @media screen and (min-width: 1000px) {
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }
     .main {
         margin-top: 2rem;
         flex-direction: row;
@@ -94,9 +99,11 @@
     }
     .main-content {
         order: 1;
+        max-width: 50%;
     }
     .main-image {
-        order: 2
+        order: 2;
+        max-width: 100%;
     }
     .main-titles {
         margin: 0;

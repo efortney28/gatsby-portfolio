@@ -6,6 +6,7 @@
     justify-content: center;
 }
 .page-title {
+    text-align: center;
     margin-top: 2rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -51,11 +52,11 @@ a {
 }
 @media screen and (min-width: 1000px) {
     .container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+        display: flex;
+        flex-direction: row !important;
     }
     .dev-info {
-        margin-right: 2rem;
+        margin-right: 8rem;
     }
     .dev-container {
         display: grid;
